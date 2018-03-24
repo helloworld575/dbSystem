@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="mydbSystem">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.4">
+    <root id="1"/>
+    <schema id="2" parent="1" name="mydbsystem">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="campusreservation"/>
+    <schema id="4" parent="1" name="information_schema"/>
+    <schema id="5" parent="1" name="mysql"/>
+    <schema id="6" parent="1" name="performance_schema"/>
+    <schema id="7" parent="1" name="test"/>
+    <table id="8" parent="2" name="student"/>
+    <column id="9" parent="8" name="sid">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="10" parent="8" name="sname">
+      <Position>2</Position>
+      <DataType>char(20)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="11" parent="8" name="sage">
+      <Position>3</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <column id="12" parent="8" name="ssex">
+      <Position>4</Position>
+      <DataType>char(2)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="13" parent="8" name="sclass">
+      <Position>5</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="14" parent="8" name="sdepart">
+      <Position>6</Position>
+      <DataType>char(10)|0</DataType>
+    </column>
+    <column id="15" parent="8" name="saddr">
+      <Position>7</Position>
+      <DataType>char(50)|0</DataType>
+    </column>
+    <key id="16" parent="8" name="PRIMARY">
+      <NameSurrogate>1</NameSurrogate>
+      <ColNames>sid</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>
