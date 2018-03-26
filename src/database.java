@@ -50,7 +50,7 @@ public class database {
         if (num.isSelected()) {
             tmp = numText.getText();
             if (tmp.contains("%") || tmp.contains("_"))
-                message += "(sid like" + tmp + ")and ";
+                message += "(sid like '" + tmp + "')and ";
             else
                 message += "(sid = " + tmp + ")and ";
         }
